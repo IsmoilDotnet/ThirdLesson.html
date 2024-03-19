@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        .Container {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .Tablecontainer {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+
+    <script>
+        function previous() {
+            window.location.href = "FirstForm.html";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="Container">
+        <div class="Tablecontainer">
+            <table style="width: 100%;">
+                <tr style="background-color: blanchedalmond;">
+                    <th colspan="2" style="color: red;">Registration Form</th>
+
+                </tr>
+                <tr style="background-color: aqua;">
+                    <td><label for="Name">Enter Name</label></td>
+                    <td style="text-align: start;"><input type="text" id="Name"></td>
+                </tr>
+                <tr style="background-color: aqua;">
+                    <td><label for="Password">Enter Password</label></td>
+                    <td style="text-align: start;"><input type="text" id="Password"></td>
+                </tr>
+                <tr style="background-color: aqua;">
+                    <td><label for="Address">Enter Address</label></td>
+                    <td style="text-align: start;"><textarea name="Message" id="" cols="30" rows="5"></textarea></td>
+                </tr>
+                <tr style="background-color: aqua;">
+                    <td><label for="Games">Select Game</label></td>
+                    <td style="text-align: start;">
+                        <form>
+                            <input type="checkbox" id="game1" name="game1" value="Hockey">
+                            <label for="game1">Hockey</label><br>
+                            <input type="checkbox" id="game2" name="game2" value="FootBall">
+                            <label for="game2">FootBall</label><br>
+                            <input type="checkbox" id="game3" name="game3" value="Badminton">
+                            <label for="game3">Badminton</label><br>
+                            <input type="checkbox" id="game4" name="game4" value="Cricket">
+                            <label for="game2">Cricket</label><br>
+                            <input type="checkbox" id="game5" name="game5" value="VolleyBall">
+                            <label for="game5">VolleyBall</label>
+                        </form>
+                    </td>
+                </tr>
+                <tr style="background-color: aqua;">
+                    <td><label for="Gender">Gender</label></td>
+                    <td style="text-align: left;">
+                        <input type="radio" name="Male" id="Gender">
+                        <label for="Gender">Male</label>
+                        <input type="radio" name="Female" id="Female">
+                        <label for="Gender">Female</label>
+                    </td>
+                </tr>
+                <tr style="background-color: aqua;">
+                    <td><label for="Age">Select Your Age</label></td>
+                    <td style="text-align: left;">
+                        <select name="Age" id="Age">
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr style="background-color: aqua;">
+                    <td><label for="Photo">Select Photo</label></td>
+                    <td style="text-align: start;">
+                        <form action="/upload" method="post" enctype="multipart/form-data">
+                            <input type="file" name="fileUpload" id="fileUpload">
+                        </form>
+                    </td>
+                </tr>
+                <tr style="background-color: aqua;">
+                    <td colspan="2" style="text-align: center;">
+                        <button style="width: 150px; height: 40px;">Click Me</button>
+                        <button style="width: 150px; height: 40px;">Reset</button>
+                        <input style="width: 150px; height: 40px;" type="Submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="Container">
+        <br><br><button style="width: 250px; height: 50px; color: darkblue; font-size: larger; background-color: aqua;"
+            onclick="previous()">&#x2B05 Previous</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        .Container {
+            width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .StickAll {
+            display: flex;
+        }
+
+        .Header {
+            width: 600px;
+            height: 50px;
+            background-color: rgb(222, 135, 4);
+            display: inline-block;
+            text-align: start;
+            line-height: 25px;
+        }
+
+        .Main {
+            width: 600px;
+            height: 400px;
+            background-color: rgb(34, 37, 54);
+            display: inline-block;
+            text-align: center;
+        }
+
+        .Footer {
+            width: 600px;
+            height: 60px;
+            background-color: rgb(222, 135, 4);
+            display: inline-block;
+            text-align: end;
+            line-height: 60px;
+        }
+    </style>
+    <script>
+        function next() {
+            window.location.href = "SecondForm.html";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="Container">
+        <div class="Header">
+            <h1 style="margin: 10px;">Sign Up</h1>
+        </div>
+        <div class="Main">
+            <form action="/sth.html">
+                <br>
+                <label style="color: yellow;margin: 10px;" for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" value="John"><br><br>
+                <label style="color: yellow;margin: 10px;" for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <label style="color: yellow; margin: 10px;" for="Birthdate">Date of Birth</label>
+                <input type="date" id="Birthdate" /><br><br>
+                <label style="color: yellow;margin: 10px;" id="Gender">Gender</label>
+                <input type="radio" name="Male" id="Gender" value="Male">
+                <label style="color: yellow;" for="Gender">Male</label>
+                <input type="radio" name="Female" id="Gender" value="Female">
+                <label style="color: yellow;" for="Gender">Female</label><br><br>
+                <label style="color: yellow;margin: 10px;" for="Country">Country</label>
+                <select id="Country" name="Countries">
+                    <option value="Uzbekistan">Uzbekistan</option>
+                    <option value="Kazakhstan">Kazakhstan</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Turkmenistan">Turkmenistan</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="India">India</option>
+                    <option value="China">China</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Japan">Japan</option>
+                    <option value="UAE">UAE</option>
+                    <option value="Korea">Korea</option>
+                </select><br><br>
+                <label style="color: yellow;margin: 10px;" for="Email">Email</label>
+                <input type="text" id="Email" name="Email"><br><br>
+                <label style="color: yellow;margin: 10px;" for="Phone">Phone</label>
+                <input type="text" id="Phone" name="Phone"><br><br>
+                <label style="color: yellow;margin: 10px;" for="Password">Password</label>
+                <input type="text" id="Password" name="Password"><br><br>
+                <label style="color: yellow;margin: 10px;" for="Confirm">Confirm Password</label>
+                <input type="text" id="Confirm" name="Confirm"><br><br>
+                <input type="checkbox" id="Terms" name="Terms" value="Term">
+                <label style="color: yellow;" for="Terms">I Agree to the Terms of <a href="sth.html">Use</a></label><br>
+            </form>
+        </div>
+        <div class="Footer">
+            <input style="background-color: rgb(98, 175, 94);width: 80px; height: 40px;" type="submit" value="Submit">
+            <button style="background-color: rgb(217, 84, 79);width: 80px; height: 40px; margin: 10px;">Cancel</button>
+        </div>
+    </div>
+
+    <div class="Container">
+        <br><br><button
+            style="width: 250px; height: 50px;color: darkblue; font-size: larger; background-color: aqua;"
+            onclick="next()">Next &#10145</button>
+    </div>
+</body>
+
+</html>
